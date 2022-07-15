@@ -4,7 +4,7 @@ Documentation   Keywords e variaveis para acoes do endpoint /produtos
 * Keywords *
 POST Endpoint /produtos
     &{header}               Create Dictionary       Authorization=${token_auth}
-    &{payload}              Create Dictionary       nome=MouseTech      preco=400   descricao=Mouse    quantidade=100
+    &{payload}              Create Dictionary       nome=TecladoQueBrilha      preco=1798  descricao=RGB    quantidade=10
     ${response}             POST On Session     Serverest           /produtos       data=&{payload}    headers=&{header}
     Log to Console          response ${response.content}
     Set Global Variable     ${response}

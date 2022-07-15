@@ -60,7 +60,37 @@ Cenario: POST Criar Usuario de Massa Estatica 201
     [Tags]      POSTESTATICO
     Criar Sessao
     Criar Usuario Estatico Valido
+    Validar Status Code "201"
+
+Cenario: GET Carrinhos cadastrados 200
+    [Tags]      GETCARRINHOS
+    Criar Sessao
+    GET Endpoint /carrinhos
     Validar Status Code "200"
+    Printar Conteudo Response
+
+Cenario: POST Cadastrar Carrinho 201
+    [Tags]       POSTCARRINHOS
+    Criar Sessao
+    Fazer Login e Armazenar Token
+    POST Endpoint /carrinhos
+    Validar Status Code "201"
+
+Cenario: DELETE Ednpoint /carrinhos/concluir-compra 200
+    [Tags]      CONCLUIRCOMPRA
+    Criar Sessao
+    Fazer Login e Armazenar Token
+    DELETE Endpoint /carrinhos/concluir-compra
+    Validar Status Code "200"
+    Printar Conteudo Response
+
+Cenario: DELETE Ednpoint /carrinhos/cancelar-compra 200
+    [Tags]      CANCELARCOMPRA
+    Criar Sessao
+    Fazer Login e Armazenar Token
+    DELETE Endpoint /carrinhos/cancelar-compra
+    Validar Status Code "200"
+    Printar Conteudo Response
 
 * Keywords *
 
