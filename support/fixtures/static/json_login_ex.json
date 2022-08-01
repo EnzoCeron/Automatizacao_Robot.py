@@ -1,0 +1,26 @@
+{
+    "login_valido_sem_carrinho":{
+        "email":"toninhozs@outlook.com",
+        "password":"sadass"
+    },
+    "login_email_invalido":{
+        "email":"emailInvalido@gmail.com",
+        "password":"98765"
+    },
+    "login_senha_invalida":{
+        "email":"1234deoliveira@gmail.com",
+        "password":"alooo"
+    },
+    "login_sem_senha":{
+        "email":"1234deoliveira@gmail.com",
+        "password":""
+    },
+    "login_sem_email":{
+        "email":"",
+        "password":"alooo"
+    },
+    "login_nao_administrador":{
+        "email":"naoadm@gmail.com",
+        "password":"3000"
+    }
+}
