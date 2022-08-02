@@ -1,0 +1,38 @@
+{
+    "produto_valido":{
+    "nome": "Anne Pro 2 - RGB, Branco",
+    "preco": 1500,
+    "descricao": "Teclado",
+    "quantidade": 140
+  },
+  "produto_invalido":{
+    "nome": "Chaleira Inox",
+    "preco": 100,
+    "descricao": "Bom dms",
+    "quantidade": 25
+  },
+  "produto_sem_nome":{
+    "nome": "",
+    "preco": 3000,
+    "descricao": "Copo Stanley",
+    "quantidade": 670
+  },
+  "produto_preco_invalido":{
+    "nome": "Logitech MX Vertical",
+    "preco": "string",
+    "descricao": "Mouse",
+    "quantidade": 200
+  },
+  "produto_editado":{
+    "nome":"Logitech MX Vertical",
+    "preco":215,
+    "descricao":"Mouse",
+    "quantidade":2710
+  },
+  "produto_novo":{
+    "nome":"Mouse Fallen Quartz",
+    "preco":800,
+    "descricao":"Mouse RGB, Ultraleve",
+    "quantidade":150
+  }
+}

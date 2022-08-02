@@ -1,0 +1,76 @@
+Este projeto paseado na API Serverest abrange os seguintes casos de teste:
+
+/LOGIN
+
+CT01: Realizar login válido (200)
+CT02: Realizar login sem email (400)
+CT03: Realizar login sem senha (400)
+CT04: Realizar login com email invalido (401)
+CT05: Realizar login com senha invalida (401)
+
+/USUARIOS
+
+** GET **
+CT06: Listar todos os usuários (200)
+CT07: Buscar e retornar um usuário específico (200)
+CT08: Buscar um usuário inexistente (400)
+
+** POST **
+CT09: Cadastrar um novo usuário (201)
+CT010: Cadastrar novo usuário com um email já cadastrado (400)
+CT11: Cadastrar usuario sem email (400)
+CT12: Cadastrar usuario sem senha (400)
+
+** PUT **
+CT13: Editar um usuário existente (200)
+CT14: Cadastrar novo usuário (201)
+CT15: Editar o email de um usuário para outro já existente (400)
+
+** DELETE **
+CT16: Excluir um usuário existente sem carrinho cadastrado (200)
+CT17: Excluir um usuário inexistente (200)
+CT18: Excluir um usuário com carrinho cadastrado (400)
+
+/PRODUTOS
+
+** GET **
+CT19: Listar todos os produtos (200)
+CT20: Buscar e retornar um produto específico (200)
+CT21: Buscar por um produto inexistente (400)
+
+** POST **
+CT22: Cadastrar um novo produto (200)
+CT23: Cadastrar um produto existente (400)
+CT24: Cadastrar um produto sem nome (400)
+CT25: Cadastrar um produto com preco invalido (400)
+CT26: Cadastrar um produto sem token de acesso (401)
+
+** PUT **
+CT27: Editar um produto existente (200)
+CT28: Cadastrar um novo produto (201)
+CT29: Editar o nome de um produto para outro nome já existente (400)
+CT30: Editar um produto sem token de acesso (401)
+
+** DELETE **
+CT31: Excluir um produto (200)
+CT32: Excluir um produto que está no carrinho (400)
+CT33: Excluir um produto sem token de acesso (401)
+CT34: Excluir um produto com um usuário que não é administrador (403)
+
+/CARRINHOS
+
+** GET **
+CT35: Listar todos os carrinhos (200)
+CT36: Buscar e retornar um carrinho específico (200)
+CT37: Buscar um carrinho inexistente (400)
+
+** POST **
+CT38: Cadastrar um carrinho (201)
+CT39: Cadastrar outro carrinho para o mesmo usuário (400)
+CT40: Cadastrar um carrinho sem token de acesso (401)
+
+** DELETE **
+CT41: Concluir uma compra (200)
+CT42: Concluir uma compra sem token de acesso (401)
+CT43: Cancelar uma compra e retornar produtos ao estoque (200)
+CT44: Cancelar uma compra sem token de acesso (401)
