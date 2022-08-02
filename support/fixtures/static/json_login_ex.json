@@ -1,7 +1,12 @@
 {
     "login_valido_sem_carrinho":{
+<<<<<<< HEAD
         "email":"toninhozs@outlook.com",
         "password":"sadass"
+=======
+        "email":"ericreese@example.com",
+        "password":"1C3OtLiJ@y"
+>>>>>>> DEVELOP
     },
     "login_email_invalido":{
         "email":"emailInvalido@gmail.com",
@@ -20,7 +25,12 @@
         "password":"alooo"
     },
     "login_nao_administrador":{
+<<<<<<< HEAD
         "email":"naoadm@gmail.com",
         "password":"3000"
+=======
+        "email":"1234deoliveira@outlook.com",
+        "password":"3090"
+>>>>>>> DEVELOP
     }
 }

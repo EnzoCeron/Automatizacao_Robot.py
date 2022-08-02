@@ -144,3 +144,8 @@ Cenário: DELETE Acesso Apenas ao Administrador 403
     Validar Status Code "403"
     Validar Mensagem: "Rota exclusiva para administradores"
 
+<<<<<<< HEAD
+=======
+Cenário: Listar Estoque total
+    Listar estoque total
+>>>>>>> DEVELOP

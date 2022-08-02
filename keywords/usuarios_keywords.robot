@@ -84,9 +84,19 @@ DELETE Usuario id "${id}"
     Set Global Variable         ${response}
 
 Listar todos os ids
+<<<<<<< HEAD
     ${1}    listaids
     Log To Console          ${1}
 
 Usuario com carrinho
     ${2}    usuariocomcarrinho
     Log To Console          ${2}
+=======
+    ${1}    listarids
+    Log To Console          ${1}
+
+Buscar id com carrinho
+    ${oi}   usuariocomcarrinho
+    Log To Console          ${oi}
+
+>>>>>>> DEVELOP
