@@ -114,11 +114,5 @@ Cenário: DELETE Excluir Usuário com Carrinho Cadastrado 400
 
 Cenário: Teste Livraria
     [tags]      Teste
-<<<<<<< HEAD
-    Listar estoque total
-    Listar todos os ids
-    Usuario com carrinho
-=======
     Listar todos os ids
     Buscar id com carrinho
->>>>>>> DEVELOP

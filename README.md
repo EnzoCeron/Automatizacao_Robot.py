@@ -56,11 +56,7 @@ Não é necessário criar um repositório antes disso, basta abrir o terminal e 
 
 Paula Beatriz -
 
-<<<<<<< HEAD
-Emily -
-=======
 Emily - https://github.com/eslanzarin
->>>>>>> DEVELOP
 
 Mathues Locatelli - 
 
