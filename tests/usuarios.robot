@@ -12,13 +12,13 @@ ${id_user_com_carrinho}              oUb7aGkMtSEPf6BZ
 * Test Cases *
 
 Cenário: GET Todos os Usuários 200
-    [tags]      GET200.1
+    [tags]      GET1.200
     Criar Sessao
     GET Endpoint /usuarios
     Validar Status Code "200"
 
 Cenário: GET Usuário Específico 200
-    [tags]      GET200.2
+    [tags]      GET2.200
     Criar Sessao
     GET Endpoint /usuarios id "ruaucKNOMrKziorx"
     Validar Status Code "200"
@@ -42,21 +42,21 @@ Cenário: POST Cadastrar Novo Usuario 201
     Validar Status Code "200"
 
 Cenário: POST Cadastrar Novo Usuário com Email Já Cadastrado 400
-    [tags]      POST400.1
+    [tags]      POST1.400
     Criar Sessao
     Criar Usuario Estatico Invalido
     Validar Status Code "400"
     Validar Mensagem: "Este email já está sendo usado"
 
 Cenário: POST Cadastrar Novo Usuário sem Email 400
-    [tags]      POST400.2
+    [tags]      POST2.400
     Criar Sessao
     Criar Usuario Estatico sem Email
     Validar Status Code "400"
     Validar Response        email
 
 Cenário: POST Cadastrar Novo Usuário sem Senha 400
-    [tags]      POST400.3
+    [tags]      POST3.400
     Criar Sessao
     Criar Usuario Estatico sem Senha
     Validar Status Code "400"
@@ -89,7 +89,7 @@ Cenário: PUT Mudar Email de um Usuário para um Existente 400
 
 
 Cenário: DELETE Excluir Usuário Existente 200
-    [tags]  	DELETE200.1
+    [tags]  	DELETE1.200
     Criar Sessao
     Criar Dados Usuario Valido
     POST Endpoint /usuarios
@@ -99,7 +99,7 @@ Cenário: DELETE Excluir Usuário Existente 200
     Validar Mensagem: "Registro excluído com sucesso"
 
 Cenário: DELETE Excluir Usuário Inexistente 200
-    [tags]  	DELETE200.2
+    [tags]  	DELETE2.200
     Criar Sessao
     DELETE Usuario id "Inexistente"
     Validar Status Code "200"

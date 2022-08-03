@@ -6,13 +6,13 @@ Resource        ../keywords/produtos_keywords.robot
 * Test Cases *
 
 Cenário: GET Todos os Produtos 200
-    [tags]      GET200.1
+    [tags]      GET1.200
     Criar Sessao
     GET Endpoint /produtos
     Validar Status Code "200"
 
 Cenário: GET Produto Específico 200
-    [tags]      GET200.2
+    [tags]      GET2.200
     Criar Sessao
     GET Endpoint /produtos id "BeeJh5lz3k6kSIzA"
     Validar Status Code "200"
@@ -38,7 +38,7 @@ Cenário: POST Cadastrar Novo Produto 201
     Validar Mensagem: "Registro excluído com sucesso"
 
 Cenário: POST Cadastrar Produto Existente 400
-    [tags]      POST400.1
+    [tags]      POST1.400
     Criar Sessao
     Fazer Login e Armazenar Token
     Cadastra Produto Estatico Invalido
@@ -46,7 +46,7 @@ Cenário: POST Cadastrar Produto Existente 400
     Validar Mensagem: "Já existe produto com esse nome"
 
 Cenário: POST Cadastrar Produto sem Nome 400
-    [tags]      POST400.2
+    [tags]      POST2.400
     Criar Sessao
     Fazer Login e Armazenar Token
     Cadastra Produto Estatico sem Email
@@ -54,14 +54,14 @@ Cenário: POST Cadastrar Produto sem Nome 400
     Validar Response        nome
 
 Cenário: POST Cadastrar Produto com preco Invalido 400
-    [tags]      POST400.3
+    [tags]      POST3.400
     Criar Sessao
     Fazer Login e Armazenar Token
     Cadastra Produto Estatico de Preco Invalido
     Validar Status Code "400"
 
 Cenário: POST Erro no Token 401
-    [tags]      POST401.1
+    [tags]      POST1.401
     Criar Sessao
     Cadastra Produto Sem Token
     Validar Status Code "401"
@@ -144,8 +144,5 @@ Cenário: DELETE Acesso Apenas ao Administrador 403
     Validar Status Code "403"
     Validar Mensagem: "Rota exclusiva para administradores"
 
-<<<<<<< HEAD
-=======
 Cenário: Listar Estoque total
     Listar estoque total
->>>>>>> DEVELOP

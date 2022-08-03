@@ -1,18 +1,19 @@
 
+from socket import INADDR_UNSPEC_GROUP
 import requests as req
 import os
 import json
 
 
 
-def usuariocomcarrinho():
+def usuariocarrinho():
     lista = []
     i = 0
     r = req.get("http://localhost:3000/carrinhos")
     formula = r.json()
     total = formula["quantidade"]
     for i in range(0, int(total)-1):
-        lista.append(formula["idUsuario"][i]["_id"])
+        lista.append(formula["carrinhos"][i]["idUsuario"])
     return lista
 
 

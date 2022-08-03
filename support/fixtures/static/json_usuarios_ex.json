@@ -1,6 +1,5 @@
 {
     "usuario_valido":{
-<<<<<<< HEAD
         "nome":"Lana Del Rey",
         "email":"stargirlinterlude@gmail.com",
         "password":"ultraviolence",
@@ -27,7 +26,6 @@
     "usuario_sem_senha":{
         "nome":"Childish Gambino",
         "email":"becausetheinternet@gmail.com",
-=======
         "nome":"oliveira",
         "email":"1234deoliveira@gmail.com",
         "password":"1234",
@@ -54,20 +52,13 @@
     "usuario_sem_senha":{
         "nome":"123deolivera4",
         "email":"1234deoliveira@outlook.com",
->>>>>>> DEVELOP
         "password":"",
         "administrador":"false"
     },
     "usuario_editado":{
-<<<<<<< HEAD
-        "nome":"Lizzie Grant",
-        "email":"stargirlinterlude@gmail.com",
-        "password":"ultraviolence",
-=======
         "nome":"cleitinho da silva",
         "email":"cleitu@gmail.com",
         "password":"1234",
->>>>>>> DEVELOP
         "administrador":"true"
     }
 }
