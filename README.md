@@ -54,6 +54,7 @@ Não é necessário criar um repositório antes disso, basta abrir o terminal e 
 
 # Creditos e Agradecimentos 
 
+Em especial
 Paula Beatriz - https://github.com/BeatrizJardimm
 
 Emily - https://github.com/eslanzarin
